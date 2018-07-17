@@ -20,6 +20,7 @@
       </xsl:comment>
       <schema queryBinding="xslt2">
         <xsl:apply-templates select="document($library)" mode="generateIncludes"/>
+        <include href="quickFix-library.xml"/>
         <xsl:apply-templates mode="rules"/>
       </schema>
     </xsl:result-document>
@@ -49,8 +50,11 @@
       <xsl:apply-templates mode="instantiate"/>
     </pattern>
   </xsl:template>
+  
   <xsl:template match="dlentry" mode="instantiate">
-    <param name="{dt}" value="{dd}"/>
+    <xsl:variable name="ap">'</xsl:variable>
+    <xsl:variable name="doubleap">''</xsl:variable>
+    <param name="{dt}" value="{replace(dd, $ap, $doubleap)}"/>
   </xsl:template>
   <xsl:template match="text()" mode="instantiate"/>
 

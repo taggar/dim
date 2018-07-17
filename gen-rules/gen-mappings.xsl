@@ -3,6 +3,7 @@
   version="2.0">
   <xsl:output indent="yes"/>
   
+  <xsl:variable name="baseDescriptions" select="resolve-uri('rules/ditaContentCompletionElementsMap.xml', base-uri(/))"/>
   <xsl:variable name="library" select="resolve-uri('rules/library.sch', base-uri(/))"/>
   <xsl:variable name="base" select="resolve-uri('.', base-uri(/))"/>  
   <xsl:param name="title" select="normalize-space((@title,//*[contains(@class, ' topic/title ')])[1])"/>  
@@ -16,11 +17,14 @@
         If you want to change the mappings, edit the corresponding metadata data
         elements marked with name="styleguide" in the corresponding topic files.
       </xsl:comment>
-      <contentCompletionElementsMap htmlContentFilterStylesheet="contentFilter.xsl">
+      <contentCompletionElementsMap
+        redirectURLPrefix="http://www.oxygenxml.com/redirect-url.php?url="
+        htmlContentFilterStylesheet="contentFilter.xsl">
         <mappingGroup
           xml:base="http://example.com/styleguide/webhelp/">
         <xsl:apply-templates mode="mapping" select="."/>
         </mappingGroup>
+        <xsl:copy-of select="document($baseDescriptions)/*/node()"/>
       </contentCompletionElementsMap>
     </xsl:result-document>
   </xsl:template>
@@ -35,11 +39,11 @@
     <xsl:variable name="target" select="replace($origin, '.dita', '.html')">
     </xsl:variable>
     <xsl:choose>
-      <xsl:when test="starts-with(@value, '@')">
-        <mapping attributeName="{substring-after(@value, '@')}" path="{$target}" type="link" linkText="{@name}"/>
+      <xsl:when test="starts-with(@name, '@')">
+        <mapping attributeName="{substring-after(@name, '@')}" path="{$target}" type="link" linkText="{@value}"/>
       </xsl:when>
       <xsl:otherwise>
-        <mapping elementName="{@value}" path="{$target}" type="link" linkText="{@name}"/>
+        <mapping elementName="{@name}" path="{$target}" type="link" linkText="{@value}"/>
       </xsl:otherwise>
     </xsl:choose>
     

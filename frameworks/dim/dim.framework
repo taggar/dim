@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<serialized version="16.1" xml:space="preserve">
+<serialized version="17.0" xml:space="preserve">
 	<serializableOrderedMap>
 		<entry>
 			<String>document.types</String>
@@ -31,7 +31,7 @@
 											<String>classpath</String>
 										</field>
 										<field name="index">
-											<Integer>4</Integer>
+											<Integer>5</Integer>
 										</field>
 										<field name="value">
 											<String>${framework}/oxygen-gim-extensions.jar</String>
@@ -48,7 +48,7 @@
 											<String>authorExtensionDescriptor/cssDescriptors</String>
 										</field>
 										<field name="index">
-											<Integer>5</Integer>
+											<Integer>9</Integer>
 										</field>
 										<field name="value">
 											<cssFile>
@@ -56,10 +56,10 @@
 													<String>${framework}/css/rules.css</String>
 												</field>
 												<field name="title">
-													<String>Default</String>
+													<String>+ DIM</String>
 												</field>
 												<field name="alternate">
-													<Boolean>false</Boolean>
+													<Boolean>true</Boolean>
 												</field>
 											</cssFile>
 										</field>
@@ -72,27 +72,10 @@
 									</poPatch>
 									<poPatch>
 										<field name="fieldPath">
-											<String>authorExtensionDescriptor/mergeCSSsFromDocument</String>
-										</field>
-										<field name="index">
-											<Integer>-1</Integer>
-										</field>
-										<field name="value">
-											<Boolean>true</Boolean>
-										</field>
-										<field name="patchHandling">
-											<String>set</String>
-										</field>
-										<field name="anchor">
-											<null/>
-										</field>
-									</poPatch>
-									<poPatch>
-										<field name="fieldPath">
 											<String>authorExtensionDescriptor/actionDescriptors</String>
 										</field>
 										<field name="index">
-											<Integer>65</Integer>
+											<Integer>66</Integer>
 										</field>
 										<field name="value">
 											<action>
@@ -100,16 +83,16 @@
 													<String>add.rule</String>
 												</field>
 												<field name="name">
-													<String>add.rule</String>
+													<String>Add business rule</String>
 												</field>
 												<field name="description">
 													<String>Adds a new business rule.</String>
 												</field>
 												<field name="largeIconPath">
-													<String>/images/AcceptChange20.png</String>
+													<String>${framework}/images/AddBusinessRule24.png</String>
 												</field>
 												<field name="smallIconPath">
-													<String></String>
+													<String>${framework}/images/AddBusinessRule24.png</String>
 												</field>
 												<field name="accessKey">
 													<String></String>
@@ -203,13 +186,13 @@
 														</actionMode>
 														<actionMode>
 															<field name="xpathCondition">
-																<String></String>
+																<String>true()</String>
 															</field>
 															<field name="argValues">
 																<serializableOrderedMap>
 																	<entry>
 																		<String>insertLocation</String>
-																		<String>/*[contains(@class, " topic/topic")]/*[contains(@class," topic/body  ")]</String>
+																		<String>/*[contains(@class, " topic/topic")]/*[contains(@class," topic/body ")]</String>
 																	</entry>
 																	<entry>
 																		<String>insertPosition</String>
@@ -231,6 +214,9 @@
 														</actionMode>
 													</actionMode-array>
 												</field>
+												<field name="enabledInReadOnlyContext">
+													<Boolean>false</Boolean>
+												</field>
 											</action>
 										</field>
 										<field name="patchHandling">
@@ -245,7 +231,7 @@
 											<String>authorExtensionDescriptor/actionDescriptors</String>
 										</field>
 										<field name="index">
-											<Integer>66</Integer>
+											<Integer>67</Integer>
 										</field>
 										<field name="value">
 											<action>
@@ -253,16 +239,16 @@
 													<String>add.link</String>
 												</field>
 												<field name="name">
-													<String>Add Style Guide Link</String>
+													<String>Add style guide link</String>
 												</field>
 												<field name="description">
 													<String>Add link to style guide</String>
 												</field>
 												<field name="largeIconPath">
-													<String>/images/DockableFrameEntities16.gif</String>
+													<String>${framework}/images/LinkStyleGuide24.png</String>
 												</field>
 												<field name="smallIconPath">
-													<String>/images/DockableFrameEntities16.gif</String>
+													<String>${framework}/images/LinkStyleGuide24.png</String>
 												</field>
 												<field name="accessKey">
 													<String></String>
@@ -425,6 +411,9 @@
 														</actionMode>
 													</actionMode-array>
 												</field>
+												<field name="enabledInReadOnlyContext">
+													<Boolean>false</Boolean>
+												</field>
 											</action>
 										</field>
 										<field name="patchHandling">
@@ -439,7 +428,7 @@
 											<String>authorExtensionDescriptor/actionDescriptors</String>
 										</field>
 										<field name="index">
-											<Integer>67</Integer>
+											<Integer>68</Integer>
 										</field>
 										<field name="value">
 											<action>
@@ -447,7 +436,7 @@
 													<String>delete.element</String>
 												</field>
 												<field name="name">
-													<String>Delete</String>
+													<String>Delete element</String>
 												</field>
 												<field name="description">
 													<String>Delete the current element</String>
@@ -478,6 +467,9 @@
 															</field>
 														</actionMode>
 													</actionMode-array>
+												</field>
+												<field name="enabledInReadOnlyContext">
+													<Boolean>false</Boolean>
 												</field>
 											</action>
 										</field>
@@ -514,7 +506,7 @@
 											<String>authorExtensionDescriptor/toolbarDescriptor/toolbarEntriesDescriptorList</String>
 										</field>
 										<field name="index">
-											<Integer>0</Integer>
+											<Integer>1</Integer>
 										</field>
 										<field name="value">
 											<toolbarItem>
@@ -535,7 +527,7 @@
 											<String>authorExtensionDescriptor/toolbarDescriptor/toolbarEntriesDescriptorList</String>
 										</field>
 										<field name="index">
-											<Integer>0</Integer>
+											<Integer>2</Integer>
 										</field>
 										<field name="value">
 											<toolbarSeparator/>
@@ -600,6 +592,7 @@
 							<String>${framework}/resources/</String>
 							<String>${framework}/i18n/</String>
 							<String>${framework}/reuse/</String>
+							<String>${framework}/styleguide/</String>
 						</String-array>
 					</field>
 					<field name="parentClassLoaderID">
@@ -611,10 +604,10 @@
 								<cssFile-array>
 									<cssFile>
 										<field name="href">
-											<String>${framework}/css_classed/dita.css</String>
+											<String>${framework}/css/edit/style-basic.css</String>
 										</field>
 										<field name="title">
-											<String>Default</String>
+											<String>Basic</String>
 										</field>
 										<field name="alternate">
 											<Boolean>false</Boolean>
@@ -622,10 +615,98 @@
 									</cssFile>
 									<cssFile>
 										<field name="href">
-											<String>${framework}/css_classed/show_colspec.css</String>
+											<String>${framework}/css/edit/style-pure.css</String>
 										</field>
 										<field name="title">
-											<String>Show colspec</String>
+											<String>Pure</String>
+										</field>
+										<field name="alternate">
+											<Boolean>false</Boolean>
+										</field>
+									</cssFile>
+									<cssFile>
+										<field name="href">
+											<String>${framework}/css/edit/style-cursive.css</String>
+										</field>
+										<field name="title">
+											<String>Cursive</String>
+										</field>
+										<field name="alternate">
+											<Boolean>false</Boolean>
+										</field>
+									</cssFile>
+									<cssFile>
+										<field name="href">
+											<String>${framework}/css/edit/style-century.css</String>
+										</field>
+										<field name="title">
+											<String>Century</String>
+										</field>
+										<field name="alternate">
+											<Boolean>false</Boolean>
+										</field>
+									</cssFile>
+									<cssFile>
+										<field name="href">
+											<String>${framework}/css/edit/style-facet-design.css</String>
+										</field>
+										<field name="title">
+											<String>Facet Design</String>
+										</field>
+										<field name="alternate">
+											<Boolean>false</Boolean>
+										</field>
+									</cssFile>
+									<cssFile>
+										<field name="href">
+											<String>${framework}/css/edit/style-roboto.css</String>
+										</field>
+										<field name="title">
+											<String>Roboto</String>
+										</field>
+										<field name="alternate">
+											<Boolean>false</Boolean>
+										</field>
+									</cssFile>
+									<cssFile>
+										<field name="href">
+											<String>${framework}/css/edit/style-journal.css</String>
+										</field>
+										<field name="title">
+											<String>Trip Journal</String>
+										</field>
+										<field name="alternate">
+											<Boolean>false</Boolean>
+										</field>
+									</cssFile>
+									<cssFile>
+										<field name="href">
+											<String>${framework}/css/edit/style-papyrus.css</String>
+										</field>
+										<field name="title">
+											<String>Papyrus</String>
+										</field>
+										<field name="alternate">
+											<Boolean>false</Boolean>
+										</field>
+									</cssFile>
+									<cssFile>
+										<field name="href">
+											<String>${framework}/css_classed/dita.css</String>
+										</field>
+										<field name="title">
+											<String>&lt;Old - Compatibility Mode></String>
+										</field>
+										<field name="alternate">
+											<Boolean>false</Boolean>
+										</field>
+									</cssFile>
+									<cssFile>
+										<field name="href">
+											<String>${framework}/css/edit/alternate-full-width-layout.css</String>
+										</field>
+										<field name="title">
+											<String>+ Full width</String>
 										</field>
 										<field name="alternate">
 											<Boolean>true</Boolean>
@@ -633,10 +714,10 @@
 									</cssFile>
 									<cssFile>
 										<field name="href">
-											<String>${framework}/css_classed/hide_colspec.css</String>
+											<String>${framework}/css/edit/alternate-map-print-preview-layout.css</String>
 										</field>
 										<field name="title">
-											<String>Hide colspec</String>
+											<String>+ Print ready</String>
 										</field>
 										<field name="alternate">
 											<Boolean>true</Boolean>
@@ -644,10 +725,10 @@
 									</cssFile>
 									<cssFile>
 										<field name="href">
-											<String>${framework}/css_classed/dita_coloured_revisions.css</String>
+											<String>${framework}/css/edit/alternate-coloured-revisions.css</String>
 										</field>
 										<field name="title">
-											<String>Colored revision changes</String>
+											<String>+ Colored revision changes</String>
 										</field>
 										<field name="alternate">
 											<Boolean>true</Boolean>
@@ -655,10 +736,54 @@
 									</cssFile>
 									<cssFile>
 										<field name="href">
-											<String>${framework}/css_classed/dita_syntax_highlight.css</String>
+											<String>${framework}/css/edit/alternate-syntax-highlight.css</String>
 										</field>
 										<field name="title">
-											<String>Syntax highlight for code blocks</String>
+											<String>+ Codeblock syntax highlight</String>
+										</field>
+										<field name="alternate">
+											<Boolean>true</Boolean>
+										</field>
+									</cssFile>
+									<cssFile>
+										<field name="href">
+											<String>${framework}/css/edit/alternate-table-show-colspec.css</String>
+										</field>
+										<field name="title">
+											<String>+ Show table column specifications</String>
+										</field>
+										<field name="alternate">
+											<Boolean>true</Boolean>
+										</field>
+									</cssFile>
+									<cssFile>
+										<field name="href">
+											<String>${framework}/css/edit/alternate-hide-draft-comments.css</String>
+										</field>
+										<field name="title">
+											<String>+ Hide draft comments</String>
+										</field>
+										<field name="alternate">
+											<Boolean>true</Boolean>
+										</field>
+									</cssFile>
+									<cssFile>
+										<field name="href">
+											<String>${framework}/css/hints/hints.css</String>
+										</field>
+										<field name="title">
+											<String>+ Hints</String>
+										</field>
+										<field name="alternate">
+											<Boolean>true</Boolean>
+										</field>
+									</cssFile>
+									<cssFile>
+										<field name="href">
+											<String>${framework}/css/actions/actions.css</String>
+										</field>
+										<field name="title">
+											<String>+ Inline actions</String>
 										</field>
 										<field name="alternate">
 											<Boolean>true</Boolean>
@@ -667,7 +792,10 @@
 								</cssFile-array>
 							</field>
 							<field name="mergeCSSsFromDocument">
-								<Boolean>false</Boolean>
+								<Boolean>true</Boolean>
+							</field>
+							<field name="multipleAlternateSelectionEnabled">
+								<Boolean>true</Boolean>
 							</field>
 							<field name="actionDescriptors">
 								<action-array>
@@ -682,7 +810,7 @@
 											<String>${i18n(bold_description)}</String>
 										</field>
 										<field name="largeIconPath">
-											<String>/images/Bold20.png</String>
+											<String>/images/Bold24.png</String>
 										</field>
 										<field name="smallIconPath">
 											<String>/images/Bold16.gif</String>
@@ -713,6 +841,9 @@
 												</actionMode>
 											</actionMode-array>
 										</field>
+										<field name="enabledInReadOnlyContext">
+											<Boolean>false</Boolean>
+										</field>
 									</action>
 									<action>
 										<field name="id">
@@ -725,7 +856,7 @@
 											<String>${i18n(italic_description)}</String>
 										</field>
 										<field name="largeIconPath">
-											<String>/images/Italic20.png</String>
+											<String>/images/Italic24.png</String>
 										</field>
 										<field name="smallIconPath">
 											<String>/images/Italic16.png</String>
@@ -756,6 +887,9 @@
 												</actionMode>
 											</actionMode-array>
 										</field>
+										<field name="enabledInReadOnlyContext">
+											<Boolean>false</Boolean>
+										</field>
 									</action>
 									<action>
 										<field name="id">
@@ -768,7 +902,7 @@
 											<String>${i18n(underline_description)}</String>
 										</field>
 										<field name="largeIconPath">
-											<String>/images/Underline20.png</String>
+											<String>/images/Underline24.png</String>
 										</field>
 										<field name="smallIconPath">
 											<String>/images/Underline16.gif</String>
@@ -799,6 +933,9 @@
 												</actionMode>
 											</actionMode-array>
 										</field>
+										<field name="enabledInReadOnlyContext">
+											<Boolean>false</Boolean>
+										</field>
 									</action>
 									<action>
 										<field name="id">
@@ -811,7 +948,7 @@
 											<String>${i18n(paragraph_description)}</String>
 										</field>
 										<field name="largeIconPath">
-											<String>/images/Paragraph20.png</String>
+											<String>/images/Paragraph24.png</String>
 										</field>
 										<field name="smallIconPath">
 											<String>/images/Paragraph16.gif</String>
@@ -866,6 +1003,9 @@
 												</actionMode>
 											</actionMode-array>
 										</field>
+										<field name="enabledInReadOnlyContext">
+											<Boolean>false</Boolean>
+										</field>
 									</action>
 									<action>
 										<field name="id">
@@ -878,7 +1018,7 @@
 											<String>${i18n(listitem_description)}</String>
 										</field>
 										<field name="largeIconPath">
-											<String>/images/ListItem20.gif</String>
+											<String>/images/ListItem24.png</String>
 										</field>
 										<field name="smallIconPath">
 											<String>/images/ListItem16.gif</String>
@@ -891,6 +1031,46 @@
 										</field>
 										<field name="actionModes">
 											<actionMode-array>
+												<actionMode>
+													<field name="xpathCondition">
+														<String>ancestor-or-self::*[contains(@class," task/substep ")]</String>
+													</field>
+													<field name="argValues">
+														<serializableOrderedMap>
+															<entry>
+																<String>fragment</String>
+																<String>&lt;substep>&lt;cmd/>&lt;/substep></String>
+															</entry>
+															<entry>
+																<String>insertLocation</String>
+																<String>ancestor-or-self::*[contains(@class," task/substep ")][1]</String>
+															</entry>
+															<entry>
+																<String>insertPosition</String>
+																<String>After</String>
+															</entry>
+														</serializableOrderedMap>
+													</field>
+													<field name="operationID">
+														<String>ro.sync.ecss.extensions.commons.operations.InsertFragmentOperation</String>
+													</field>
+												</actionMode>
+												<actionMode>
+													<field name="xpathCondition">
+														<String>self::*[contains(@class," task/substeps ")]</String>
+													</field>
+													<field name="argValues">
+														<serializableOrderedMap>
+															<entry>
+																<String>fragment</String>
+																<String>&lt;substep>&lt;cmd/>&lt;/substep></String>
+															</entry>
+														</serializableOrderedMap>
+													</field>
+													<field name="operationID">
+														<String>ro.sync.ecss.extensions.commons.operations.InsertFragmentOperation</String>
+													</field>
+												</actionMode>
 												<actionMode>
 													<field name="xpathCondition">
 														<String>ancestor-or-self::*[contains(@class," task/step ")]</String>
@@ -917,7 +1097,7 @@
 												</actionMode>
 												<actionMode>
 													<field name="xpathCondition">
-														<String>self::*[contains(@class," task/steps ")]</String>
+														<String>self::*[contains(@class," task/steps ") or contains(@class," task/steps-unordered ")]</String>
 													</field>
 													<field name="argValues">
 														<serializableOrderedMap>
@@ -929,6 +1109,57 @@
 													</field>
 													<field name="operationID">
 														<String>ro.sync.ecss.extensions.commons.operations.InsertFragmentOperation</String>
+													</field>
+												</actionMode>
+												<actionMode>
+													<field name="xpathCondition">
+														<String>ancestor-or-self::*[contains(@class," topic/dd pr-d/pd ")] |  ancestor-or-self::*[contains(@class," topic/dt pr-d/pt ")] | ancestor-or-self::*[contains(@class," topic/dlentry pr-d/plentry ")]</String>
+													</field>
+													<field name="argValues">
+														<serializableOrderedMap>
+															<entry>
+																<String>fragment</String>
+																<String>&lt;plentry>
+ &lt;pt />
+ &lt;pd/>
+&lt;/plentry></String>
+															</entry>
+															<entry>
+																<String>insertLocation</String>
+																<String>ancestor-or-self::*[contains(@class," topic/dlentry pr-d/plentry ")][1]
+</String>
+															</entry>
+															<entry>
+																<String>insertPosition</String>
+																<String>After</String>
+															</entry>
+														</serializableOrderedMap>
+													</field>
+													<field name="operationID">
+														<String>ro.sync.ecss.extensions.commons.operations.InsertFragmentOperation</String>
+													</field>
+												</actionMode>
+												<actionMode>
+													<field name="xpathCondition">
+														<String>self::*[contains(@class," topic/dl pr-d/parml ")]</String>
+													</field>
+													<field name="argValues">
+														<serializableOrderedMap>
+															<entry>
+																<String>fragment</String>
+																<String>&lt;plentry>
+ &lt;pt/>
+ &lt;pd/>
+&lt;/plentry></String>
+															</entry>
+															<entry>
+																<String>schemaAware</String>
+																<String>true</String>
+															</entry>
+														</serializableOrderedMap>
+													</field>
+													<field name="operationID">
+														<String>ro.sync.ecss.extensions.commons.operations.SurroundWithFragmentOperation</String>
 													</field>
 												</actionMode>
 												<actionMode>
@@ -984,6 +1215,166 @@
 												</actionMode>
 												<actionMode>
 													<field name="xpathCondition">
+														<String>ancestor-or-self::*[contains(@class," task/li taskreq-d/reqcond ")]</String>
+													</field>
+													<field name="argValues">
+														<serializableOrderedMap>
+															<entry>
+																<String>fragment</String>
+																<String>&lt;reqcond/></String>
+															</entry>
+															<entry>
+																<String>insertLocation</String>
+																<String>ancestor-or-self::*[contains(@class," task/li taskreq-d/reqcond ")][1]</String>
+															</entry>
+															<entry>
+																<String>insertPosition</String>
+																<String>After</String>
+															</entry>
+														</serializableOrderedMap>
+													</field>
+													<field name="operationID">
+														<String>ro.sync.ecss.extensions.commons.operations.InsertFragmentOperation</String>
+													</field>
+												</actionMode>
+												<actionMode>
+													<field name="xpathCondition">
+														<String>self::*[contains(@class," task/ol taskreq-d/reqconds ")]</String>
+													</field>
+													<field name="argValues">
+														<serializableOrderedMap>
+															<entry>
+																<String>fragment</String>
+																<String>&lt;reqcond/></String>
+															</entry>
+														</serializableOrderedMap>
+													</field>
+													<field name="operationID">
+														<String>ro.sync.ecss.extensions.commons.operations.SurroundWithFragmentOperation</String>
+													</field>
+												</actionMode>
+												<actionMode>
+													<field name="xpathCondition">
+														<String>ancestor-or-self::*[contains(@class," task/li taskreq-d/supply ")]</String>
+													</field>
+													<field name="argValues">
+														<serializableOrderedMap>
+															<entry>
+																<String>fragment</String>
+																<String>&lt;supply/></String>
+															</entry>
+															<entry>
+																<String>insertLocation</String>
+																<String>ancestor-or-self::*[contains(@class," task/li taskreq-d/supply ")][1]</String>
+															</entry>
+															<entry>
+																<String>insertPosition</String>
+																<String>After</String>
+															</entry>
+														</serializableOrderedMap>
+													</field>
+													<field name="operationID">
+														<String>ro.sync.ecss.extensions.commons.operations.InsertFragmentOperation</String>
+													</field>
+												</actionMode>
+												<actionMode>
+													<field name="xpathCondition">
+														<String>self::*[contains(@class," task/ul taskreq-d/supplyli ")]</String>
+													</field>
+													<field name="argValues">
+														<serializableOrderedMap>
+															<entry>
+																<String>fragment</String>
+																<String>&lt;supply/></String>
+															</entry>
+														</serializableOrderedMap>
+													</field>
+													<field name="operationID">
+														<String>ro.sync.ecss.extensions.commons.operations.SurroundWithFragmentOperation</String>
+													</field>
+												</actionMode>
+												<actionMode>
+													<field name="xpathCondition">
+														<String>ancestor-or-self::*[contains(@class," task/li taskreq-d/spare ")]</String>
+													</field>
+													<field name="argValues">
+														<serializableOrderedMap>
+															<entry>
+																<String>fragment</String>
+																<String>&lt;spare/></String>
+															</entry>
+															<entry>
+																<String>insertLocation</String>
+																<String>ancestor-or-self::*[contains(@class," task/li taskreq-d/spare ")][1]</String>
+															</entry>
+															<entry>
+																<String>insertPosition</String>
+																<String>After</String>
+															</entry>
+														</serializableOrderedMap>
+													</field>
+													<field name="operationID">
+														<String>ro.sync.ecss.extensions.commons.operations.InsertFragmentOperation</String>
+													</field>
+												</actionMode>
+												<actionMode>
+													<field name="xpathCondition">
+														<String>self::*[contains(@class," task/ul taskreq-d/sparesli ")]</String>
+													</field>
+													<field name="argValues">
+														<serializableOrderedMap>
+															<entry>
+																<String>fragment</String>
+																<String>&lt;spare/></String>
+															</entry>
+														</serializableOrderedMap>
+													</field>
+													<field name="operationID">
+														<String>ro.sync.ecss.extensions.commons.operations.SurroundWithFragmentOperation</String>
+													</field>
+												</actionMode>
+												<actionMode>
+													<field name="xpathCondition">
+														<String>ancestor-or-self::*[contains(@class," task/li taskreq-d/safecond ")]</String>
+													</field>
+													<field name="argValues">
+														<serializableOrderedMap>
+															<entry>
+																<String>fragment</String>
+																<String>&lt;safecond/></String>
+															</entry>
+															<entry>
+																<String>insertLocation</String>
+																<String>ancestor-or-self::*[contains(@class," task/li taskreq-d/safecond ")][1]</String>
+															</entry>
+															<entry>
+																<String>insertPosition</String>
+																<String>After</String>
+															</entry>
+														</serializableOrderedMap>
+													</field>
+													<field name="operationID">
+														<String>ro.sync.ecss.extensions.commons.operations.InsertFragmentOperation</String>
+													</field>
+												</actionMode>
+												<actionMode>
+													<field name="xpathCondition">
+														<String>self::*[contains(@class," task/ol taskreq-d/safety ")]</String>
+													</field>
+													<field name="argValues">
+														<serializableOrderedMap>
+															<entry>
+																<String>fragment</String>
+																<String>&lt;safecond/></String>
+															</entry>
+														</serializableOrderedMap>
+													</field>
+													<field name="operationID">
+														<String>ro.sync.ecss.extensions.commons.operations.SurroundWithFragmentOperation</String>
+													</field>
+												</actionMode>
+												<actionMode>
+													<field name="xpathCondition">
 														<String>ancestor-or-self::*[contains(@class," topic/li ")]</String>
 													</field>
 													<field name="argValues">
@@ -1022,7 +1413,50 @@
 														<String>ro.sync.ecss.extensions.commons.operations.SurroundWithFragmentOperation</String>
 													</field>
 												</actionMode>
+												<actionMode>
+													<field name="xpathCondition">
+														<String>ancestor-or-self::*[contains(@class," topic/sli ")]</String>
+													</field>
+													<field name="argValues">
+														<serializableOrderedMap>
+															<entry>
+																<String>fragment</String>
+																<String>&lt;sli/></String>
+															</entry>
+															<entry>
+																<String>insertLocation</String>
+																<String>ancestor-or-self::*[contains(@class," topic/sli ")][1]</String>
+															</entry>
+															<entry>
+																<String>insertPosition</String>
+																<String>After</String>
+															</entry>
+														</serializableOrderedMap>
+													</field>
+													<field name="operationID">
+														<String>ro.sync.ecss.extensions.commons.operations.InsertFragmentOperation</String>
+													</field>
+												</actionMode>
+												<actionMode>
+													<field name="xpathCondition">
+														<String>self::*[contains(@class," topic/sl ")]</String>
+													</field>
+													<field name="argValues">
+														<serializableOrderedMap>
+															<entry>
+																<String>fragment</String>
+																<String>&lt;sli/></String>
+															</entry>
+														</serializableOrderedMap>
+													</field>
+													<field name="operationID">
+														<String>ro.sync.ecss.extensions.commons.operations.SurroundWithFragmentOperation</String>
+													</field>
+												</actionMode>
 											</actionMode-array>
+										</field>
+										<field name="enabledInReadOnlyContext">
+											<Boolean>false</Boolean>
 										</field>
 									</action>
 									<action>
@@ -1036,10 +1470,10 @@
 											<String>${i18n(unorderedList_description)}</String>
 										</field>
 										<field name="largeIconPath">
-											<String>/images/UnorderedList20.png</String>
+											<String>/images/UnorderedList24.png</String>
 										</field>
 										<field name="smallIconPath">
-											<String>/images/UnorderedList16.gif</String>
+											<String>/images/UnorderedList16.png</String>
 										</field>
 										<field name="accessKey">
 											<String></String>
@@ -1087,6 +1521,9 @@
 												</actionMode>
 											</actionMode-array>
 										</field>
+										<field name="enabledInReadOnlyContext">
+											<Boolean>false</Boolean>
+										</field>
 									</action>
 									<action>
 										<field name="id">
@@ -1099,7 +1536,7 @@
 											<String>${i18n(orderedList_description)}</String>
 										</field>
 										<field name="largeIconPath">
-											<String>/images/OrderedList20.gif</String>
+											<String>/images/OrderedList24.png</String>
 										</field>
 										<field name="smallIconPath">
 											<String>/images/OrderedList16.gif</String>
@@ -1150,6 +1587,9 @@
 												</actionMode>
 											</actionMode-array>
 										</field>
+										<field name="enabledInReadOnlyContext">
+											<Boolean>false</Boolean>
+										</field>
 									</action>
 									<action>
 										<field name="id">
@@ -1162,7 +1602,7 @@
 											<String>${i18n(section_description)}</String>
 										</field>
 										<field name="largeIconPath">
-											<String>/images/Section20.png</String>
+											<String>/images/Section24.png</String>
 										</field>
 										<field name="smallIconPath">
 											<String>/images/Section16.gif</String>
@@ -1217,6 +1657,9 @@
 												</actionMode>
 											</actionMode-array>
 										</field>
+										<field name="enabledInReadOnlyContext">
+											<Boolean>false</Boolean>
+										</field>
 									</action>
 									<action>
 										<field name="id">
@@ -1229,10 +1672,10 @@
 											<String>${i18n(insert.table_description)}</String>
 										</field>
 										<field name="largeIconPath">
-											<String>/images/Table20.gif</String>
+											<String>/images/Table24.png</String>
 										</field>
 										<field name="smallIconPath">
-											<String>/images/Table16.gif</String>
+											<String>/images/Table16.png</String>
 										</field>
 										<field name="accessKey">
 											<String></String>
@@ -1248,13 +1691,21 @@
 oxy:allows-child-element("*", "class", " topic/simpletable ")</String>
 													</field>
 													<field name="argValues">
-														<serializableOrderedMap/>
+														<serializableOrderedMap>
+															<entry>
+																<String>defaultTableModel</String>
+																<String>cals</String>
+															</entry>
+														</serializableOrderedMap>
 													</field>
 													<field name="operationID">
 														<String>ro.sync.ecss.extensions.dita.topic.table.InsertTableOperation</String>
 													</field>
 												</actionMode>
 											</actionMode-array>
+										</field>
+										<field name="enabledInReadOnlyContext">
+											<Boolean>false</Boolean>
 										</field>
 									</action>
 									<action>
@@ -1268,7 +1719,7 @@ oxy:allows-child-element("*", "class", " topic/simpletable ")</String>
 											<String>${i18n(insert.table.row.below_description)}</String>
 										</field>
 										<field name="largeIconPath">
-											<String>/images/TableRow20.gif</String>
+											<String>/images/TableRow24.png</String>
 										</field>
 										<field name="smallIconPath">
 											<String>/images/TableRow16.gif</String>
@@ -1379,6 +1830,9 @@ oxy:allows-child-element("*", "class", " topic/simpletable ")</String>
 												</actionMode>
 											</actionMode-array>
 										</field>
+										<field name="enabledInReadOnlyContext">
+											<Boolean>false</Boolean>
+										</field>
 									</action>
 									<action>
 										<field name="id">
@@ -1391,7 +1845,7 @@ oxy:allows-child-element("*", "class", " topic/simpletable ")</String>
 											<String>${i18n(insert.table.entry_description)}</String>
 										</field>
 										<field name="largeIconPath">
-											<String>/images/TableCell20.gif</String>
+											<String>/images/TableCell24.png</String>
 										</field>
 										<field name="smallIconPath">
 											<String>/images/TableCell16.gif</String>
@@ -1518,6 +1972,9 @@ oxy:allows-child-element("*", "class", " topic/simpletable ")</String>
 												</actionMode>
 											</actionMode-array>
 										</field>
+										<field name="enabledInReadOnlyContext">
+											<Boolean>false</Boolean>
+										</field>
 									</action>
 									<action>
 										<field name="id">
@@ -1530,7 +1987,7 @@ oxy:allows-child-element("*", "class", " topic/simpletable ")</String>
 											<String>${i18n(insert.image_description)}</String>
 										</field>
 										<field name="largeIconPath">
-											<String>/images/Image20.png</String>
+											<String>/images/Image24.png</String>
 										</field>
 										<field name="smallIconPath">
 											<String>/images/Image16.gif</String>
@@ -1556,6 +2013,9 @@ oxy:allows-child-element("*", "class", " topic/simpletable ")</String>
 												</actionMode>
 											</actionMode-array>
 										</field>
+										<field name="enabledInReadOnlyContext">
+											<Boolean>false</Boolean>
+										</field>
 									</action>
 									<action>
 										<field name="id">
@@ -1568,7 +2028,7 @@ oxy:allows-child-element("*", "class", " topic/simpletable ")</String>
 											<String>${i18n(insert.concept_description)}</String>
 										</field>
 										<field name="largeIconPath">
-											<String>/images/InsertConcept20.gif</String>
+											<String>/images/InsertConcept24.png</String>
 										</field>
 										<field name="smallIconPath">
 											<String>/images/InsertConcept16.gif</String>
@@ -1663,6 +2123,9 @@ oxy:allows-child-element("*", "class", " topic/simpletable ")</String>
 												</actionMode>
 											</actionMode-array>
 										</field>
+										<field name="enabledInReadOnlyContext">
+											<Boolean>false</Boolean>
+										</field>
 									</action>
 									<action>
 										<field name="id">
@@ -1675,7 +2138,7 @@ oxy:allows-child-element("*", "class", " topic/simpletable ")</String>
 											<String>${i18n(insert.task_description)}</String>
 										</field>
 										<field name="largeIconPath">
-											<String>/images/InsertTask20.gif</String>
+											<String>/images/InsertTask24.png</String>
 										</field>
 										<field name="smallIconPath">
 											<String>/images/InsertTask16.gif</String>
@@ -1770,6 +2233,9 @@ oxy:allows-child-element("*", "class", " topic/simpletable ")</String>
 												</actionMode>
 											</actionMode-array>
 										</field>
+										<field name="enabledInReadOnlyContext">
+											<Boolean>false</Boolean>
+										</field>
 									</action>
 									<action>
 										<field name="id">
@@ -1782,7 +2248,7 @@ oxy:allows-child-element("*", "class", " topic/simpletable ")</String>
 											<String>${i18n(insert.topic_description)}</String>
 										</field>
 										<field name="largeIconPath">
-											<String>/images/InsertTopic20.gif</String>
+											<String>/images/InsertTopic24.png</String>
 										</field>
 										<field name="smallIconPath">
 											<String>/images/InsertTopic16.gif</String>
@@ -1877,6 +2343,9 @@ oxy:allows-child-element("*", "class", " topic/simpletable ")</String>
 												</actionMode>
 											</actionMode-array>
 										</field>
+										<field name="enabledInReadOnlyContext">
+											<Boolean>false</Boolean>
+										</field>
 									</action>
 									<action>
 										<field name="id">
@@ -1889,7 +2358,7 @@ oxy:allows-child-element("*", "class", " topic/simpletable ")</String>
 											<String>${i18n(insert.reference_description)}</String>
 										</field>
 										<field name="largeIconPath">
-											<String>/images/InsertRef20.gif</String>
+											<String>/images/InsertRef24.png</String>
 										</field>
 										<field name="smallIconPath">
 											<String>/images/InsertRef16.gif</String>
@@ -1984,6 +2453,9 @@ oxy:allows-child-element("*", "class", " topic/simpletable ")</String>
 												</actionMode>
 											</actionMode-array>
 										</field>
+										<field name="enabledInReadOnlyContext">
+											<Boolean>false</Boolean>
+										</field>
 									</action>
 									<action>
 										<field name="id">
@@ -1996,7 +2468,7 @@ oxy:allows-child-element("*", "class", " topic/simpletable ")</String>
 											<String>${i18n(table.join.row.cells_description)}</String>
 										</field>
 										<field name="largeIconPath">
-											<String>/images/TableJoinRowCells20.gif</String>
+											<String>/images/TableJoinRowCells24.png</String>
 										</field>
 										<field name="smallIconPath">
 											<String>/images/TableJoinRowCells16.gif</String>
@@ -2022,6 +2494,9 @@ oxy:allows-child-element("*", "class", " topic/simpletable ")</String>
 												</actionMode>
 											</actionMode-array>
 										</field>
+										<field name="enabledInReadOnlyContext">
+											<Boolean>false</Boolean>
+										</field>
 									</action>
 									<action>
 										<field name="id">
@@ -2034,7 +2509,7 @@ oxy:allows-child-element("*", "class", " topic/simpletable ")</String>
 											<String>${i18n(table.split.left_description)}</String>
 										</field>
 										<field name="largeIconPath">
-											<String>/images/TableSplitCellLeft20.gif</String>
+											<String>/images/TableSplitCellLeft24.png</String>
 										</field>
 										<field name="smallIconPath">
 											<String>/images/TableSplitCellLeft16.gif</String>
@@ -2065,6 +2540,9 @@ oxy:allows-child-element("*", "class", " topic/simpletable ")</String>
 												</actionMode>
 											</actionMode-array>
 										</field>
+										<field name="enabledInReadOnlyContext">
+											<Boolean>false</Boolean>
+										</field>
 									</action>
 									<action>
 										<field name="id">
@@ -2077,7 +2555,7 @@ oxy:allows-child-element("*", "class", " topic/simpletable ")</String>
 											<String>${i18n(table.split.right_description)}</String>
 										</field>
 										<field name="largeIconPath">
-											<String>/images/TableSplitCellRight20.gif</String>
+											<String>/images/TableSplitCellRight24.png</String>
 										</field>
 										<field name="smallIconPath">
 											<String>/images/TableSplitCellRight16.gif</String>
@@ -2108,6 +2586,9 @@ oxy:allows-child-element("*", "class", " topic/simpletable ")</String>
 												</actionMode>
 											</actionMode-array>
 										</field>
+										<field name="enabledInReadOnlyContext">
+											<Boolean>false</Boolean>
+										</field>
 									</action>
 									<action>
 										<field name="id">
@@ -2120,7 +2601,7 @@ oxy:allows-child-element("*", "class", " topic/simpletable ")</String>
 											<String>${i18n(table.join.cell.above_description)}</String>
 										</field>
 										<field name="largeIconPath">
-											<String>/images/TableJoinCellUp20.gif</String>
+											<String>/images/TableJoinCellUp24.png</String>
 										</field>
 										<field name="smallIconPath">
 											<String>/images/TableJoinCellUp16.gif</String>
@@ -2151,6 +2632,9 @@ oxy:allows-child-element("*", "class", " topic/simpletable ")</String>
 												</actionMode>
 											</actionMode-array>
 										</field>
+										<field name="enabledInReadOnlyContext">
+											<Boolean>false</Boolean>
+										</field>
 									</action>
 									<action>
 										<field name="id">
@@ -2163,7 +2647,7 @@ oxy:allows-child-element("*", "class", " topic/simpletable ")</String>
 											<String>${i18n(table.join.cell.below_description)}</String>
 										</field>
 										<field name="largeIconPath">
-											<String>/images/TableJoinCellDown20.gif</String>
+											<String>/images/TableJoinCellDown24.png</String>
 										</field>
 										<field name="smallIconPath">
 											<String>/images/TableJoinCellDown16.gif</String>
@@ -2194,6 +2678,9 @@ oxy:allows-child-element("*", "class", " topic/simpletable ")</String>
 												</actionMode>
 											</actionMode-array>
 										</field>
+										<field name="enabledInReadOnlyContext">
+											<Boolean>false</Boolean>
+										</field>
 									</action>
 									<action>
 										<field name="id">
@@ -2206,7 +2693,7 @@ oxy:allows-child-element("*", "class", " topic/simpletable ")</String>
 											<String>${i18n(table.split.below_description)}</String>
 										</field>
 										<field name="largeIconPath">
-											<String>/images/TableSplitCellDown20.gif</String>
+											<String>/images/TableSplitCellDown24.png</String>
 										</field>
 										<field name="smallIconPath">
 											<String>/images/TableSplitCellDown16.gif</String>
@@ -2237,6 +2724,9 @@ oxy:allows-child-element("*", "class", " topic/simpletable ")</String>
 												</actionMode>
 											</actionMode-array>
 										</field>
+										<field name="enabledInReadOnlyContext">
+											<Boolean>false</Boolean>
+										</field>
 									</action>
 									<action>
 										<field name="id">
@@ -2249,7 +2739,7 @@ oxy:allows-child-element("*", "class", " topic/simpletable ")</String>
 											<String>${i18n(table.split.above_description)}</String>
 										</field>
 										<field name="largeIconPath">
-											<String>/images/TableSplitCellUp20.gif</String>
+											<String>/images/TableSplitCellUp24.png</String>
 										</field>
 										<field name="smallIconPath">
 											<String>/images/TableSplitCellUp16.gif</String>
@@ -2280,6 +2770,9 @@ oxy:allows-child-element("*", "class", " topic/simpletable ")</String>
 												</actionMode>
 											</actionMode-array>
 										</field>
+										<field name="enabledInReadOnlyContext">
+											<Boolean>false</Boolean>
+										</field>
 									</action>
 									<action>
 										<field name="id">
@@ -2292,7 +2785,7 @@ oxy:allows-child-element("*", "class", " topic/simpletable ")</String>
 											<String>${i18n(insert.table.column.after_description)}</String>
 										</field>
 										<field name="largeIconPath">
-											<String>/images/TableColumn20.gif</String>
+											<String>/images/TableColumn24.png</String>
 										</field>
 										<field name="smallIconPath">
 											<String>/images/TableColumn16.gif</String>
@@ -2338,6 +2831,9 @@ oxy:allows-child-element("*", "class", " topic/simpletable ")</String>
 												</actionMode>
 											</actionMode-array>
 										</field>
+										<field name="enabledInReadOnlyContext">
+											<Boolean>false</Boolean>
+										</field>
 									</action>
 									<action>
 										<field name="id">
@@ -2350,7 +2846,7 @@ oxy:allows-child-element("*", "class", " topic/simpletable ")</String>
 											<String>${i18n(delete.table.column_description)}</String>
 										</field>
 										<field name="largeIconPath">
-											<String>/images/DeleteColumn20.gif</String>
+											<String>/images/DeleteColumn24.png</String>
 										</field>
 										<field name="smallIconPath">
 											<String>/images/DeleteColumn16.gif</String>
@@ -2387,6 +2883,9 @@ oxy:allows-child-element("*", "class", " topic/simpletable ")</String>
 												</actionMode>
 											</actionMode-array>
 										</field>
+										<field name="enabledInReadOnlyContext">
+											<Boolean>false</Boolean>
+										</field>
 									</action>
 									<action>
 										<field name="id">
@@ -2399,7 +2898,7 @@ oxy:allows-child-element("*", "class", " topic/simpletable ")</String>
 											<String>${i18n(delete.table.row_description)}</String>
 										</field>
 										<field name="largeIconPath">
-											<String>/images/DeleteRow20.gif</String>
+											<String>/images/DeleteRow24.png</String>
 										</field>
 										<field name="smallIconPath">
 											<String>/images/DeleteRow16.gif</String>
@@ -2435,6 +2934,9 @@ oxy:allows-child-element("*", "class", " topic/simpletable ")</String>
 													</field>
 												</actionMode>
 											</actionMode-array>
+										</field>
+										<field name="enabledInReadOnlyContext">
+											<Boolean>true</Boolean>
 										</field>
 									</action>
 									<action>
@@ -2487,6 +2989,9 @@ oxy:allows-child-element("*", "class", " topic/simpletable ")</String>
 												</actionMode>
 											</actionMode-array>
 										</field>
+										<field name="enabledInReadOnlyContext">
+											<Boolean>false</Boolean>
+										</field>
 									</action>
 									<action>
 										<field name="id">
@@ -2514,7 +3019,7 @@ oxy:allows-child-element("*", "class", " topic/simpletable ")</String>
 											<actionMode-array>
 												<actionMode>
 													<field name="xpathCondition">
-														<String></String>
+														<String>oxy:allows-child-element("*", "class", " topic/xref ")</String>
 													</field>
 													<field name="argValues">
 														<serializableOrderedMap>
@@ -2533,6 +3038,9 @@ oxy:allows-child-element("*", "class", " topic/simpletable ")</String>
 													</field>
 												</actionMode>
 											</actionMode-array>
+										</field>
+										<field name="enabledInReadOnlyContext">
+											<Boolean>false</Boolean>
 										</field>
 									</action>
 									<action>
@@ -2576,6 +3084,9 @@ oxy:allows-child-element("*", "class", " topic/simpletable ")</String>
 													</field>
 												</actionMode>
 											</actionMode-array>
+										</field>
+										<field name="enabledInReadOnlyContext">
+											<Boolean>false</Boolean>
 										</field>
 									</action>
 									<action>
@@ -2628,6 +3139,9 @@ oxy:allows-child-element("*", "class", " topic/simpletable ")</String>
 												</actionMode>
 											</actionMode-array>
 										</field>
+										<field name="enabledInReadOnlyContext">
+											<Boolean>false</Boolean>
+										</field>
 									</action>
 									<action>
 										<field name="id">
@@ -2675,6 +3189,9 @@ oxy:allows-child-element("*", "class", " topic/simpletable ")</String>
 												</actionMode>
 											</actionMode-array>
 										</field>
+										<field name="enabledInReadOnlyContext">
+											<Boolean>false</Boolean>
+										</field>
 									</action>
 									<action>
 										<field name="id">
@@ -2702,7 +3219,7 @@ oxy:allows-child-element("*", "class", " topic/simpletable ")</String>
 											<actionMode-array>
 												<actionMode>
 													<field name="xpathCondition">
-														<String></String>
+														<String>oxy:allows-child-element("*", "class", " topic/xref ")</String>
 													</field>
 													<field name="argValues">
 														<serializableOrderedMap>
@@ -2726,6 +3243,9 @@ oxy:allows-child-element("*", "class", " topic/simpletable ")</String>
 												</actionMode>
 											</actionMode-array>
 										</field>
+										<field name="enabledInReadOnlyContext">
+											<Boolean>false</Boolean>
+										</field>
 									</action>
 									<action>
 										<field name="id">
@@ -2738,10 +3258,10 @@ oxy:allows-child-element("*", "class", " topic/simpletable ")</String>
 											<String>${i18n(insert.conref_description)}</String>
 										</field>
 										<field name="largeIconPath">
-											<String>/images/Conref20.gif</String>
+											<String>/images/Conref24.png</String>
 										</field>
 										<field name="smallIconPath">
-											<String>/images/Conref16.gif</String>
+											<String>/images/Conref16.png</String>
 										</field>
 										<field name="accessKey">
 											<String></String>
@@ -2763,6 +3283,9 @@ oxy:allows-child-element("*", "class", " topic/simpletable ")</String>
 													</field>
 												</actionMode>
 											</actionMode-array>
+										</field>
+										<field name="enabledInReadOnlyContext">
+											<Boolean>false</Boolean>
 										</field>
 									</action>
 									<action>
@@ -2802,6 +3325,9 @@ oxy:allows-child-element("*", "class", " topic/simpletable ")</String>
 												</actionMode>
 											</actionMode-array>
 										</field>
+										<field name="enabledInReadOnlyContext">
+											<Boolean>true</Boolean>
+										</field>
 									</action>
 									<action>
 										<field name="id">
@@ -2839,6 +3365,9 @@ oxy:allows-child-element("*", "class", " topic/simpletable ")</String>
 													</field>
 												</actionMode>
 											</actionMode-array>
+										</field>
+										<field name="enabledInReadOnlyContext">
+											<Boolean>false</Boolean>
 										</field>
 									</action>
 									<action>
@@ -2878,6 +3407,9 @@ oxy:allows-child-element("*", "class", " topic/simpletable ")</String>
 												</actionMode>
 											</actionMode-array>
 										</field>
+										<field name="enabledInReadOnlyContext">
+											<Boolean>false</Boolean>
+										</field>
 									</action>
 									<action>
 										<field name="id">
@@ -2916,6 +3448,9 @@ oxy:allows-child-element("*", "class", " topic/simpletable ")</String>
 												</actionMode>
 											</actionMode-array>
 										</field>
+										<field name="enabledInReadOnlyContext">
+											<Boolean>false</Boolean>
+										</field>
 									</action>
 									<action>
 										<field name="id">
@@ -2928,10 +3463,10 @@ oxy:allows-child-element("*", "class", " topic/simpletable ")</String>
 											<String>${i18n(insert.conkeyref_description)}</String>
 										</field>
 										<field name="largeIconPath">
-											<String>/images/Conkeyref20.gif</String>
+											<String>/images/Conkeyref24.png</String>
 										</field>
 										<field name="smallIconPath">
-											<String>/images/Conkeyref16.gif</String>
+											<String>/images/Conkeyref16.png</String>
 										</field>
 										<field name="accessKey">
 											<String>K</String>
@@ -2954,6 +3489,9 @@ oxy:allows-child-element("*", "class", " topic/simpletable ")</String>
 												</actionMode>
 											</actionMode-array>
 										</field>
+										<field name="enabledInReadOnlyContext">
+											<Boolean>false</Boolean>
+										</field>
 									</action>
 									<action>
 										<field name="id">
@@ -2966,7 +3504,7 @@ oxy:allows-child-element("*", "class", " topic/simpletable ")</String>
 											<String>${i18n(insert.equation_description)}</String>
 										</field>
 										<field name="largeIconPath">
-											<String>/images/Equation20.png</String>
+											<String>/images/Equation24.png</String>
 										</field>
 										<field name="smallIconPath">
 											<String>/images/Equation16.gif</String>
@@ -2991,6 +3529,9 @@ oxy:allows-child-element("*", "class", " topic/simpletable ")</String>
 													</field>
 												</actionMode>
 											</actionMode-array>
+										</field>
+										<field name="enabledInReadOnlyContext">
+											<Boolean>false</Boolean>
 										</field>
 									</action>
 									<action>
@@ -3030,6 +3571,9 @@ oxy:allows-child-element("*", "class", " topic/simpletable ")</String>
 												</actionMode>
 											</actionMode-array>
 										</field>
+										<field name="enabledInReadOnlyContext">
+											<Boolean>false</Boolean>
+										</field>
 									</action>
 									<action>
 										<field name="id">
@@ -3067,6 +3611,9 @@ oxy:allows-child-element("*", "class", " topic/simpletable ")</String>
 													</field>
 												</actionMode>
 											</actionMode-array>
+										</field>
+										<field name="enabledInReadOnlyContext">
+											<Boolean>false</Boolean>
 										</field>
 									</action>
 									<action>
@@ -3106,6 +3653,9 @@ oxy:allows-child-element("*", "class", " topic/simpletable ")</String>
 												</actionMode>
 											</actionMode-array>
 										</field>
+										<field name="enabledInReadOnlyContext">
+											<Boolean>false</Boolean>
+										</field>
 									</action>
 									<action>
 										<field name="id">
@@ -3143,6 +3693,9 @@ oxy:allows-child-element("*", "class", " topic/simpletable ")</String>
 													</field>
 												</actionMode>
 											</actionMode-array>
+										</field>
+										<field name="enabledInReadOnlyContext">
+											<Boolean>false</Boolean>
 										</field>
 									</action>
 									<action>
@@ -3182,6 +3735,9 @@ oxy:allows-child-element("*", "class", " topic/simpletable ")</String>
 												</actionMode>
 											</actionMode-array>
 										</field>
+										<field name="enabledInReadOnlyContext">
+											<Boolean>false</Boolean>
+										</field>
 									</action>
 									<action>
 										<field name="id">
@@ -3220,6 +3776,9 @@ oxy:allows-child-element("*", "class", " topic/simpletable ")</String>
 												</actionMode>
 											</actionMode-array>
 										</field>
+										<field name="enabledInReadOnlyContext">
+											<Boolean>false</Boolean>
+										</field>
 									</action>
 									<action>
 										<field name="id">
@@ -3235,7 +3794,7 @@ oxy:allows-child-element("*", "class", " topic/simpletable ")</String>
 											<String></String>
 										</field>
 										<field name="smallIconPath">
-											<String>/images/SearchReferences16.gif</String>
+											<String>/images/SearchReferences16.png</String>
 										</field>
 										<field name="accessKey">
 											<String></String>
@@ -3257,6 +3816,9 @@ oxy:allows-child-element("*", "class", " topic/simpletable ")</String>
 													</field>
 												</actionMode>
 											</actionMode-array>
+										</field>
+										<field name="enabledInReadOnlyContext">
+											<Boolean>true</Boolean>
 										</field>
 									</action>
 									<action>
@@ -3301,6 +3863,9 @@ oxy:allows-child-element("*", "class", " topic/simpletable ")</String>
 												</actionMode>
 											</actionMode-array>
 										</field>
+										<field name="enabledInReadOnlyContext">
+											<Boolean>true</Boolean>
+										</field>
 									</action>
 									<action>
 										<field name="id">
@@ -3344,6 +3909,9 @@ oxy:allows-child-element("*", "class", " topic/simpletable ")</String>
 												</actionMode>
 											</actionMode-array>
 										</field>
+										<field name="enabledInReadOnlyContext">
+											<Boolean>true</Boolean>
+										</field>
 									</action>
 									<action>
 										<field name="id">
@@ -3382,6 +3950,9 @@ oxy:allows-child-element("*", "class", " topic/simpletable ")</String>
 												</actionMode>
 											</actionMode-array>
 										</field>
+										<field name="enabledInReadOnlyContext">
+											<Boolean>false</Boolean>
+										</field>
 									</action>
 									<action>
 										<field name="id">
@@ -3419,6 +3990,9 @@ oxy:allows-child-element("*", "class", " topic/simpletable ")</String>
 													</field>
 												</actionMode>
 											</actionMode-array>
+										</field>
+										<field name="enabledInReadOnlyContext">
+											<Boolean>false</Boolean>
 										</field>
 									</action>
 									<action>
@@ -3462,6 +4036,9 @@ oxy:allows-child-element("*", "class", " topic/simpletable ")</String>
 													</field>
 												</actionMode>
 											</actionMode-array>
+										</field>
+										<field name="enabledInReadOnlyContext">
+											<Boolean>false</Boolean>
 										</field>
 									</action>
 									<action>
@@ -3514,6 +4091,9 @@ oxy:allows-child-element("*", "class", " topic/simpletable ")</String>
 												</actionMode>
 											</actionMode-array>
 										</field>
+										<field name="enabledInReadOnlyContext">
+											<Boolean>false</Boolean>
+										</field>
 									</action>
 									<action>
 										<field name="id">
@@ -3556,6 +4136,9 @@ oxy:allows-child-element("*", "class", " topic/simpletable ")</String>
 													</field>
 												</actionMode>
 											</actionMode-array>
+										</field>
+										<field name="enabledInReadOnlyContext">
+											<Boolean>true</Boolean>
 										</field>
 									</action>
 									<action>
@@ -3605,6 +4188,9 @@ return
 												</actionMode>
 											</actionMode-array>
 										</field>
+										<field name="enabledInReadOnlyContext">
+											<Boolean>true</Boolean>
+										</field>
 									</action>
 									<action>
 										<field name="id">
@@ -3617,7 +4203,7 @@ return
 											<String>${i18n(sort_description)}</String>
 										</field>
 										<field name="largeIconPath">
-											<String>/images/Sort20.png</String>
+											<String>/images/Sort24.png</String>
 										</field>
 										<field name="smallIconPath">
 											<String>/images/Sort16.png</String>
@@ -3663,7 +4249,9 @@ ancestor-or-self::node()[self::*[contains(@class," topic/simpletable ")
 													<field name="xpathCondition">
 														<String>oxy:current-selected-element()[contains(@class," topic/ol ")] or
 oxy:current-selected-element()[contains(@class," topic/ul ")] or
-ancestor-or-self::node()[self::*[contains(@class," topic/tbody ") or contains(@class," topic/thead ") or contains(@class," topic/ul ") or contains(@class," topic/ol ")]][1][self::*[ contains(@class," topic/ul ") or contains(@class," topic/ol ")]]</String>
+oxy:current-selected-element()[contains(@class," topic/sl ")] or
+oxy:current-selected-element()[contains(@class," topic/dl ")] or
+ancestor-or-self::node()[self::*[contains(@class," topic/tbody ") or contains(@class," topic/thead ") or contains(@class," topic/ul ") or contains(@class," topic/ol ")  or contains(@class," topic/sl ") or contains(@class," topic/dl ")]][1][self::*[ contains(@class," topic/ul ") or contains(@class," topic/ol ") or contains(@class," topic/sl ") or contains(@class," topic/dl ")]]</String>
 													</field>
 													<field name="argValues">
 														<serializableOrderedMap/>
@@ -3673,6 +4261,9 @@ ancestor-or-self::node()[self::*[contains(@class," topic/tbody ") or contains(@c
 													</field>
 												</actionMode>
 											</actionMode-array>
+										</field>
+										<field name="enabledInReadOnlyContext">
+											<Boolean>false</Boolean>
 										</field>
 									</action>
 									<action>
@@ -3686,7 +4277,7 @@ ancestor-or-self::node()[self::*[contains(@class," topic/tbody ") or contains(@c
 											<String>${i18n(sort_description)}</String>
 										</field>
 										<field name="largeIconPath">
-											<String>/images/Sort20.png</String>
+											<String>/images/Sort24.png</String>
 										</field>
 										<field name="smallIconPath">
 											<String>/images/Sort16.png</String>
@@ -3729,6 +4320,9 @@ ancestor-or-self::node()[self::*[contains(@class," topic/simpletable ")
 													</field>
 												</actionMode>
 											</actionMode-array>
+										</field>
+										<field name="enabledInReadOnlyContext">
+											<Boolean>false</Boolean>
 										</field>
 									</action>
 									<action>
@@ -3777,6 +4371,9 @@ ancestor-or-self::node()[self::*[contains(@class," topic/simpletable ")
 												</actionMode>
 											</actionMode-array>
 										</field>
+										<field name="enabledInReadOnlyContext">
+											<Boolean>true</Boolean>
+										</field>
 									</action>
 									<action>
 										<field name="id">
@@ -3824,6 +4421,9 @@ ancestor-or-self::node()[self::*[contains(@class," topic/simpletable ")
 												</actionMode>
 											</actionMode-array>
 										</field>
+										<field name="enabledInReadOnlyContext">
+											<Boolean>true</Boolean>
+										</field>
 									</action>
 									<action>
 										<field name="id">
@@ -3836,7 +4436,7 @@ ancestor-or-self::node()[self::*[contains(@class," topic/simpletable ")
 											<String>${i18n(insert.table.row.above_description)}</String>
 										</field>
 										<field name="largeIconPath">
-											<String>/images/TableRowAbove20.gif</String>
+											<String>/images/TableRowAbove24.png</String>
 										</field>
 										<field name="smallIconPath">
 											<String>/images/TableRowAbove16.gif</String>
@@ -3947,6 +4547,9 @@ ancestor-or-self::node()[self::*[contains(@class," topic/simpletable ")
 												</actionMode>
 											</actionMode-array>
 										</field>
+										<field name="enabledInReadOnlyContext">
+											<Boolean>false</Boolean>
+										</field>
 									</action>
 									<action>
 										<field name="id">
@@ -3959,7 +4562,7 @@ ancestor-or-self::node()[self::*[contains(@class," topic/simpletable ")
 											<String>${i18n(insert.table.column.before_description)}</String>
 										</field>
 										<field name="largeIconPath">
-											<String>/images/TableColumnBefore20.gif</String>
+											<String>/images/TableColumnBefore24.png</String>
 										</field>
 										<field name="smallIconPath">
 											<String>/images/TableColumnBefore16.gif</String>
@@ -4014,6 +4617,9 @@ ancestor-or-self::node()[self::*[contains(@class," topic/simpletable ")
 												</actionMode>
 											</actionMode-array>
 										</field>
+										<field name="enabledInReadOnlyContext">
+											<Boolean>false</Boolean>
+										</field>
 									</action>
 									<action>
 										<field name="id">
@@ -4026,7 +4632,7 @@ ancestor-or-self::node()[self::*[contains(@class," topic/simpletable ")
 											<String>${i18n(show.table.properties.description)}</String>
 										</field>
 										<field name="largeIconPath">
-											<String>/images/TableProperties20.png</String>
+											<String>/images/TableProperties24.png</String>
 										</field>
 										<field name="smallIconPath">
 											<String>/images/TableProperties16.png</String>
@@ -4035,7 +4641,7 @@ ancestor-or-self::node()[self::*[contains(@class," topic/simpletable ")
 											<String></String>
 										</field>
 										<field name="accelerator">
-											<String>ctrl T</String>
+											<String>M1 T</String>
 										</field>
 										<field name="actionModes">
 											<actionMode-array>
@@ -4083,6 +4689,404 @@ ancestor-or-self::node()[self::*[contains(@class," topic/simpletable ") or conta
 													</field>
 												</actionMode>
 											</actionMode-array>
+										</field>
+										<field name="enabledInReadOnlyContext">
+											<Boolean>false</Boolean>
+										</field>
+									</action>
+									<action>
+										<field name="id">
+											<String>insert.table.columns.custom</String>
+										</field>
+										<field name="name">
+											<String>${i18n(insert.table.columns.custom)}...</String>
+										</field>
+										<field name="description">
+											<String>${i18n(insert.table.columns.custom_description)}</String>
+										</field>
+										<field name="largeIconPath">
+											<String></String>
+										</field>
+										<field name="smallIconPath">
+											<String></String>
+										</field>
+										<field name="accessKey">
+											<String></String>
+										</field>
+										<field name="accelerator">
+											<null/>
+										</field>
+										<field name="actionModes">
+											<actionMode-array>
+												<actionMode>
+													<field name="xpathCondition">
+														<String>ancestor-or-self::node()[self::*[contains(@class," topic/row ") or contains(@class," topic/strow ") or contains(@class," topic/sthead ")]][1][self::*[contains(@class," topic/row ")]]</String>
+													</field>
+													<field name="argValues">
+														<serializableOrderedMap>
+															<entry>
+																<String>customColumnInsertion</String>
+																<String>true</String>
+															</entry>
+															<entry>
+																<String>defaultNamespace</String>
+																<String></String>
+															</entry>
+															<entry>
+																<String>insertLocation</String>
+																<String>After</String>
+															</entry>
+															<entry>
+																<String>insertMultipleColumns</String>
+																<String>true</String>
+															</entry>
+															<entry>
+																<String>insertPosition</String>
+																<String>After</String>
+															</entry>
+														</serializableOrderedMap>
+													</field>
+													<field name="operationID">
+														<String>ro.sync.ecss.extensions.commons.table.operations.cals.InsertColumnOperation</String>
+													</field>
+												</actionMode>
+												<actionMode>
+													<field name="xpathCondition">
+														<String>ancestor-or-self::node()[self::*[contains(@class," topic/row ") or contains(@class," topic/strow ") or contains(@class," topic/sthead ")]][1][self::*[contains(@class," topic/strow ") or contains(@class," topic/sthead ")]]</String>
+													</field>
+													<field name="argValues">
+														<serializableOrderedMap>
+															<entry>
+																<String>customColumnInsertion</String>
+																<String>true</String>
+															</entry>
+															<entry>
+																<String>insertMultipleColumns</String>
+																<String>true</String>
+															</entry>
+															<entry>
+																<String>insertPosition</String>
+																<String>After</String>
+															</entry>
+														</serializableOrderedMap>
+													</field>
+													<field name="operationID">
+														<String>ro.sync.ecss.extensions.dita.topic.table.simpletable.InsertColumnOperation</String>
+													</field>
+												</actionMode>
+											</actionMode-array>
+										</field>
+										<field name="enabledInReadOnlyContext">
+											<Boolean>false</Boolean>
+										</field>
+									</action>
+									<action>
+										<field name="id">
+											<String>insert.table.rows.custom</String>
+										</field>
+										<field name="name">
+											<String>${i18n(insert.table.rows.custom)}...</String>
+										</field>
+										<field name="description">
+											<String>${i18n(insert.table.rows.custom_description)}</String>
+										</field>
+										<field name="largeIconPath">
+											<String></String>
+										</field>
+										<field name="smallIconPath">
+											<String></String>
+										</field>
+										<field name="accessKey">
+											<String></String>
+										</field>
+										<field name="accelerator">
+											<null/>
+										</field>
+										<field name="actionModes">
+											<actionMode-array>
+												<actionMode>
+													<field name="xpathCondition">
+														<String>self::*[contains(@class," topic/thead ") or contains(@class," topic/tbody ")]</String>
+													</field>
+													<field name="argValues">
+														<serializableOrderedMap>
+															<entry>
+																<String>customRowInsertion</String>
+																<String>true</String>
+															</entry>
+															<entry>
+																<String>insertLocation</String>
+																<String></String>
+															</entry>
+															<entry>
+																<String>insertMultipleRows</String>
+																<String>true</String>
+															</entry>
+															<entry>
+																<String>insertPosition</String>
+																<String>Inside as first child</String>
+															</entry>
+														</serializableOrderedMap>
+													</field>
+													<field name="operationID">
+														<String>ro.sync.ecss.extensions.commons.table.operations.cals.InsertRowOperation</String>
+													</field>
+												</actionMode>
+												<actionMode>
+													<field name="xpathCondition">
+														<String>self::*[contains(@class," topic/simpletable ")]</String>
+													</field>
+													<field name="argValues">
+														<serializableOrderedMap>
+															<entry>
+																<String>customRowInsertion</String>
+																<String>true</String>
+															</entry>
+															<entry>
+																<String>insertMultipleRows</String>
+																<String>true</String>
+															</entry>
+															<entry>
+																<String>insertPosition</String>
+																<String>Inside as first child</String>
+															</entry>
+														</serializableOrderedMap>
+													</field>
+													<field name="operationID">
+														<String>ro.sync.ecss.extensions.dita.topic.table.simpletable.InsertRowOperation</String>
+													</field>
+												</actionMode>
+												<actionMode>
+													<field name="xpathCondition">
+														<String>ancestor-or-self::node()[self::*[contains(@class," topic/row ") or contains(@class," topic/strow ") or contains(@class, " topic/sthead ")]][1][self::*[contains(@class," topic/row ")]]</String>
+													</field>
+													<field name="argValues">
+														<serializableOrderedMap>
+															<entry>
+																<String>customRowInsertion</String>
+																<String>true</String>
+															</entry>
+															<entry>
+																<String>insertLocation</String>
+																<String>ancestor-or-self::*[contains(@class," topic/row ")][1]</String>
+															</entry>
+															<entry>
+																<String>insertMultipleRows</String>
+																<String>true</String>
+															</entry>
+															<entry>
+																<String>insertPosition</String>
+																<String>After</String>
+															</entry>
+														</serializableOrderedMap>
+													</field>
+													<field name="operationID">
+														<String>ro.sync.ecss.extensions.commons.table.operations.cals.InsertRowOperation</String>
+													</field>
+												</actionMode>
+												<actionMode>
+													<field name="xpathCondition">
+														<String>ancestor-or-self::node()[self::*[contains(@class," topic/row ") or contains(@class," topic/strow ") or contains(@class, " topic/sthead ")]][1][self::*[contains(@class," topic/strow ")]]</String>
+													</field>
+													<field name="argValues">
+														<serializableOrderedMap>
+															<entry>
+																<String>customRowInsertion</String>
+																<String>true</String>
+															</entry>
+															<entry>
+																<String>insertLocation</String>
+																<String>ancestor-or-self::*[contains(@class," topic/strow ")][1]</String>
+															</entry>
+															<entry>
+																<String>insertMultipleRows</String>
+																<String>true</String>
+															</entry>
+															<entry>
+																<String>insertPosition</String>
+																<String>After</String>
+															</entry>
+														</serializableOrderedMap>
+													</field>
+													<field name="operationID">
+														<String>ro.sync.ecss.extensions.dita.topic.table.simpletable.InsertRowOperation</String>
+													</field>
+												</actionMode>
+												<actionMode>
+													<field name="xpathCondition">
+														<String>ancestor-or-self::node()[self::*[contains(@class," topic/row ") or contains(@class," topic/strow ") or contains(@class, " topic/sthead ")]][1][self::*[contains(@class," topic/sthead ")]]</String>
+													</field>
+													<field name="argValues">
+														<serializableOrderedMap>
+															<entry>
+																<String>customRowInsertion</String>
+																<String>true</String>
+															</entry>
+															<entry>
+																<String>insertLocation</String>
+																<String>ancestor-or-self::*[contains(@class," topic/sthead ")][1]</String>
+															</entry>
+															<entry>
+																<String>insertMultipleRows</String>
+																<String>true</String>
+															</entry>
+															<entry>
+																<String>insertPosition</String>
+																<String>After</String>
+															</entry>
+														</serializableOrderedMap>
+													</field>
+													<field name="operationID">
+														<String>ro.sync.ecss.extensions.dita.topic.table.simpletable.InsertRowOperation</String>
+													</field>
+												</actionMode>
+											</actionMode-array>
+										</field>
+										<field name="enabledInReadOnlyContext">
+											<Boolean>false</Boolean>
+										</field>
+									</action>
+									<action>
+										<field name="id">
+											<String>insert.properties.table</String>
+										</field>
+										<field name="name">
+											<String>${i18n(props.table.wizard)}</String>
+										</field>
+										<field name="description">
+											<String>${i18n(props.table.description)}</String>
+										</field>
+										<field name="largeIconPath">
+											<String></String>
+										</field>
+										<field name="smallIconPath">
+											<String></String>
+										</field>
+										<field name="accessKey">
+											<String></String>
+										</field>
+										<field name="accelerator">
+											<null/>
+										</field>
+										<field name="actionModes">
+											<actionMode-array>
+												<actionMode>
+													<field name="xpathCondition">
+														<String>oxy:allows-child-element("*", "class", " reference/properties ")</String>
+													</field>
+													<field name="argValues">
+														<serializableOrderedMap>
+															<entry>
+																<String>fragment</String>
+																<String>&lt;properties>
+  &lt;property>
+    &lt;proptype>&lt;/proptype>
+    &lt;propvalue>&lt;/propvalue>
+    &lt;propdesc>&lt;/propdesc>
+  &lt;/property>
+&lt;/properties></String>
+															</entry>
+														</serializableOrderedMap>
+													</field>
+													<field name="operationID">
+														<String>ro.sync.ecss.extensions.commons.operations.InsertFragmentOperation</String>
+													</field>
+												</actionMode>
+											</actionMode-array>
+										</field>
+										<field name="enabledInReadOnlyContext">
+											<Boolean>false</Boolean>
+										</field>
+									</action>
+									<action>
+										<field name="id">
+											<String>insert.choicetable</String>
+										</field>
+										<field name="name">
+											<String>${i18n(choicetable.wizard)}</String>
+										</field>
+										<field name="description">
+											<String>${i18n(choicetable.wizard_description)}</String>
+										</field>
+										<field name="largeIconPath">
+											<String></String>
+										</field>
+										<field name="smallIconPath">
+											<String></String>
+										</field>
+										<field name="accessKey">
+											<String></String>
+										</field>
+										<field name="accelerator">
+											<null/>
+										</field>
+										<field name="actionModes">
+											<actionMode-array>
+												<actionMode>
+													<field name="xpathCondition">
+														<String>oxy:allows-child-element("*", "class", " task/choicetable")</String>
+													</field>
+													<field name="argValues">
+														<serializableOrderedMap/>
+													</field>
+													<field name="operationID">
+														<String>ro.sync.ecss.extensions.dita.topic.table.InsertTableOperation</String>
+													</field>
+												</actionMode>
+											</actionMode-array>
+										</field>
+										<field name="enabledInReadOnlyContext">
+											<Boolean>false</Boolean>
+										</field>
+									</action>
+									<action>
+										<field name="id">
+											<String>insert.simpletable</String>
+										</field>
+										<field name="name">
+											<String>${i18n(simpletable.wizard)}</String>
+										</field>
+										<field name="description">
+											<String>${i18n(simpletable.wizard_description)}</String>
+										</field>
+										<field name="largeIconPath">
+											<String></String>
+										</field>
+										<field name="smallIconPath">
+											<String></String>
+										</field>
+										<field name="accessKey">
+											<String></String>
+										</field>
+										<field name="accelerator">
+											<null/>
+										</field>
+										<field name="actionModes">
+											<actionMode-array>
+												<actionMode>
+													<field name="xpathCondition">
+														<String>oxy:allows-child-element("*", "class", " topic/simpletable ")</String>
+													</field>
+													<field name="argValues">
+														<serializableOrderedMap>
+															<entry>
+																<String>defaultTableModel</String>
+																<String>simple</String>
+															</entry>
+															<entry>
+																<String>tableModel</String>
+																<String>simple</String>
+															</entry>
+														</serializableOrderedMap>
+													</field>
+													<field name="operationID">
+														<String>ro.sync.ecss.extensions.dita.topic.table.InsertTableOperation</String>
+													</field>
+												</actionMode>
+											</actionMode-array>
+										</field>
+										<field name="enabledInReadOnlyContext">
+											<Boolean>false</Boolean>
 										</field>
 									</action>
 								</action-array>
@@ -4318,7 +5322,7 @@ ancestor-or-self::node()[self::*[contains(@class," topic/simpletable ") or conta
 													<String></String>
 												</field>
 												<field name="iconPath">
-													<String>/images/UnorderedList16.gif</String>
+													<String>/images/UnorderedList16.png</String>
 												</field>
 												<field name="menuEntriesDescriptorList">
 													<menuEntry-array>
@@ -4348,7 +5352,7 @@ ancestor-or-self::node()[self::*[contains(@class," topic/simpletable ") or conta
 													<String></String>
 												</field>
 												<field name="iconPath">
-													<String>/images/Table16.gif</String>
+													<String>/images/Table16.png</String>
 												</field>
 												<field name="menuEntriesDescriptorList">
 													<menuEntry-array>
@@ -4375,6 +5379,11 @@ ancestor-or-self::node()[self::*[contains(@class," topic/simpletable ") or conta
 														</menuItem>
 														<menuItem>
 															<field name="actionID">
+																<String>insert.table.rows.custom</String>
+															</field>
+														</menuItem>
+														<menuItem>
+															<field name="actionID">
 																<String>delete.table.row</String>
 															</field>
 														</menuItem>
@@ -4387,6 +5396,11 @@ ancestor-or-self::node()[self::*[contains(@class," topic/simpletable ") or conta
 														<menuItem>
 															<field name="actionID">
 																<String>insert.table.column.after</String>
+															</field>
+														</menuItem>
+														<menuItem>
+															<field name="actionID">
+																<String>insert.table.columns.custom</String>
 															</field>
 														</menuItem>
 														<menuItem>
@@ -4519,7 +5533,7 @@ ancestor-or-self::node()[self::*[contains(@class," topic/simpletable ") or conta
 													<String></String>
 												</field>
 												<field name="iconPath">
-													<String>/images/Table16.gif</String>
+													<String>/images/Table16.png</String>
 												</field>
 												<field name="menuEntriesDescriptorList">
 													<menuEntry-array>
@@ -4531,6 +5545,11 @@ ancestor-or-self::node()[self::*[contains(@class," topic/simpletable ") or conta
 														<menuItem>
 															<field name="actionID">
 																<String>insert.table.row.below</String>
+															</field>
+														</menuItem>
+														<menuItem>
+															<field name="actionID">
+																<String>insert.table.rows.custom</String>
 															</field>
 														</menuItem>
 														<menuItem>
@@ -4547,6 +5566,11 @@ ancestor-or-self::node()[self::*[contains(@class," topic/simpletable ") or conta
 														<menuItem>
 															<field name="actionID">
 																<String>insert.table.column.after</String>
+															</field>
+														</menuItem>
+														<menuItem>
+															<field name="actionID">
+																<String>insert.table.columns.custom</String>
 															</field>
 														</menuItem>
 														<menuItem>
@@ -4863,7 +5887,7 @@ ancestor-or-self::node()[self::*[contains(@class," topic/simpletable ") or conta
 													<Integer>3</Integer>
 												</field>
 												<field name="largeIconPath">
-													<String>/images/Link20.png</String>
+													<String>/images/Link24.png</String>
 												</field>
 												<field name="smallIconPath">
 													<String>/images/Link16.png</String>
@@ -4922,7 +5946,7 @@ ancestor-or-self::node()[self::*[contains(@class," topic/simpletable ") or conta
 													<Integer>3</Integer>
 												</field>
 												<field name="largeIconPath">
-													<String>/images/Section20.png</String>
+													<String>/images/Section24.png</String>
 												</field>
 												<field name="smallIconPath">
 													<String>/images/Section16.gif</String>
@@ -5039,7 +6063,7 @@ ancestor-or-self::node()[self::*[contains(@class," topic/simpletable ") or conta
 													<Integer>3</Integer>
 												</field>
 												<field name="largeIconPath">
-													<String>/images/TableJoinSplit20.gif</String>
+													<String>/images/TableJoinSplit24.png</String>
 												</field>
 												<field name="smallIconPath">
 													<String>/images/TableJoinSplit16.gif</String>
@@ -5103,6 +6127,32 @@ ancestor-or-self::node()[self::*[contains(@class," topic/simpletable ") or conta
 													</list>
 												</field>
 												<field name="actionID">
+													<String>insert.properties.table</String>
+												</field>
+												<field name="alias">
+													<String>${i18n(props.table.wizard)}</String>
+												</field>
+											</contextItem>
+											<contextItem>
+												<field name="targets">
+													<list>
+														<Integer>0</Integer>
+													</list>
+												</field>
+												<field name="actionID">
+													<String>insert.simpletable</String>
+												</field>
+												<field name="alias">
+													<String>${i18n(simpletable.wizard)}</String>
+												</field>
+											</contextItem>
+											<contextItem>
+												<field name="targets">
+													<list>
+														<Integer>0</Integer>
+													</list>
+												</field>
+												<field name="actionID">
 													<String>insert.table</String>
 												</field>
 												<field name="alias">
@@ -5120,6 +6170,19 @@ ancestor-or-self::node()[self::*[contains(@class," topic/simpletable ") or conta
 												</field>
 												<field name="alias">
 													<String>${i18n(row.wizard)}</String>
+												</field>
+											</contextItem>
+											<contextItem>
+												<field name="targets">
+													<list>
+														<Integer>0</Integer>
+													</list>
+												</field>
+												<field name="actionID">
+													<String>insert.choicetable</String>
+												</field>
+												<field name="alias">
+													<String>${i18n(choicetable.wizard)}</String>
 												</field>
 											</contextItem>
 											<contextItem>
@@ -5217,461 +6280,22 @@ ancestor-or-self::node()[self::*[contains(@class," topic/simpletable ") or conta
 							<String>${frameworkDir}/templates/topic-xsd</String>
 							<String>${frameworkDir}/templates/d4p/topic (Dita 4 Publishers)</String>
 							<String>${frameworkDir}/templates/topic-rng</String>
+							<String>${frameworkDir}/templates/plugin</String>
 						</String-array>
 					</field>
 					<field name="xmlCatalogs">
 						<String-array>
 							<String>${framework}/catalog.xml</String>
+							<String>${configured.ditaot.dir.url}/catalog-dita.xml</String>
 							<String>${framework}/styleguide/catalog.xml</String>
+							<String>${framework}/plugin/catalog.xml</String>
 						</String-array>
 					</field>
 					<field name="description">
-						<String>Darwin Information Typing Architecture </String>
+						<String>Darwin Information Typing Architecture</String>
 					</field>
 					<field name="doctypeRules">
 						<documentTypeRule-array>
-							<documentTypeRule>
-								<field name="namespace">
-									<String>*</String>
-								</field>
-								<field name="rootElem">
-									<String>*</String>
-								</field>
-								<field name="fileName">
-									<String>*</String>
-								</field>
-								<field name="publicID">
-									<String>*</String>
-								</field>
-								<field name="javaRuleClass">
-									<String></String>
-								</field>
-								<field name="attributeLocalName">
-									<String>noNamespaceSchemaLocation</String>
-								</field>
-								<field name="attributeNamespace">
-									<String>http://www.w3.org/2001/XMLSchema-instance</String>
-								</field>
-								<field name="attributeValue">
-									<String>urn:oasis:names:tc:dita:xsd:*task*.xsd</String>
-								</field>
-							</documentTypeRule>
-							<documentTypeRule>
-								<field name="namespace">
-									<String>*</String>
-								</field>
-								<field name="rootElem">
-									<String>*</String>
-								</field>
-								<field name="fileName">
-									<String>*</String>
-								</field>
-								<field name="publicID">
-									<String>*</String>
-								</field>
-								<field name="javaRuleClass">
-									<String></String>
-								</field>
-								<field name="attributeLocalName">
-									<String>noNamespaceSchemaLocation</String>
-								</field>
-								<field name="attributeNamespace">
-									<String>http://www.w3.org/2001/XMLSchema-instance</String>
-								</field>
-								<field name="attributeValue">
-									<String>urn:oasis:names:tc:dita:xsd:*reference*.xsd</String>
-								</field>
-							</documentTypeRule>
-							<documentTypeRule>
-								<field name="namespace">
-									<String>*</String>
-								</field>
-								<field name="rootElem">
-									<String>*</String>
-								</field>
-								<field name="fileName">
-									<String>*</String>
-								</field>
-								<field name="publicID">
-									<String>*</String>
-								</field>
-								<field name="javaRuleClass">
-									<String></String>
-								</field>
-								<field name="attributeLocalName">
-									<String>noNamespaceSchemaLocation</String>
-								</field>
-								<field name="attributeNamespace">
-									<String>http://www.w3.org/2001/XMLSchema-instance</String>
-								</field>
-								<field name="attributeValue">
-									<String>urn:oasis:names:tc:dita:xsd:*topic*.xsd</String>
-								</field>
-							</documentTypeRule>
-							<documentTypeRule>
-								<field name="namespace">
-									<String>*</String>
-								</field>
-								<field name="rootElem">
-									<String>*</String>
-								</field>
-								<field name="fileName">
-									<String>*</String>
-								</field>
-								<field name="publicID">
-									<String>*</String>
-								</field>
-								<field name="javaRuleClass">
-									<String></String>
-								</field>
-								<field name="attributeLocalName">
-									<String>noNamespaceSchemaLocation</String>
-								</field>
-								<field name="attributeNamespace">
-									<String>http://www.w3.org/2001/XMLSchema-instance</String>
-								</field>
-								<field name="attributeValue">
-									<String>urn:oasis:names:tc:dita:xsd:*concept*.xsd</String>
-								</field>
-							</documentTypeRule>
-							<documentTypeRule>
-								<field name="namespace">
-									<String></String>
-								</field>
-								<field name="rootElem">
-									<String>dita</String>
-								</field>
-								<field name="fileName">
-									<String>*</String>
-								</field>
-								<field name="publicID">
-									<String>*</String>
-								</field>
-								<field name="javaRuleClass">
-									<null/>
-								</field>
-								<field name="attributeLocalName">
-									<String>*</String>
-								</field>
-								<field name="attributeNamespace">
-									<String>*</String>
-								</field>
-								<field name="attributeValue">
-									<String>*</String>
-								</field>
-							</documentTypeRule>
-							<documentTypeRule>
-								<field name="namespace">
-									<String></String>
-								</field>
-								<field name="rootElem">
-									<String>*</String>
-								</field>
-								<field name="fileName">
-									<String>*</String>
-								</field>
-								<field name="publicID">
-									<String>*-//OASIS//DTD DITA Composite*</String>
-								</field>
-								<field name="javaRuleClass">
-									<String></String>
-								</field>
-								<field name="attributeLocalName">
-									<String>*</String>
-								</field>
-								<field name="attributeNamespace">
-									<String>*</String>
-								</field>
-								<field name="attributeValue">
-									<String>*</String>
-								</field>
-							</documentTypeRule>
-							<documentTypeRule>
-								<field name="namespace">
-									<String></String>
-								</field>
-								<field name="rootElem">
-									<String>*</String>
-								</field>
-								<field name="fileName">
-									<String>*</String>
-								</field>
-								<field name="publicID">
-									<String>*-//OASIS//DTD DITA Concept*</String>
-								</field>
-								<field name="javaRuleClass">
-									<String></String>
-								</field>
-								<field name="attributeLocalName">
-									<String>*</String>
-								</field>
-								<field name="attributeNamespace">
-									<String>*</String>
-								</field>
-								<field name="attributeValue">
-									<String>*</String>
-								</field>
-							</documentTypeRule>
-							<documentTypeRule>
-								<field name="namespace">
-									<String></String>
-								</field>
-								<field name="rootElem">
-									<String>*</String>
-								</field>
-								<field name="fileName">
-									<String>*</String>
-								</field>
-								<field name="publicID">
-									<String>*-//OASIS//DTD DITA Reference*</String>
-								</field>
-								<field name="javaRuleClass">
-									<String></String>
-								</field>
-								<field name="attributeLocalName">
-									<String>*</String>
-								</field>
-								<field name="attributeNamespace">
-									<String>*</String>
-								</field>
-								<field name="attributeValue">
-									<String>*</String>
-								</field>
-							</documentTypeRule>
-							<documentTypeRule>
-								<field name="namespace">
-									<String></String>
-								</field>
-								<field name="rootElem">
-									<String>*</String>
-								</field>
-								<field name="fileName">
-									<String>*</String>
-								</field>
-								<field name="publicID">
-									<String>*-//OASIS//DTD DITA Task*</String>
-								</field>
-								<field name="javaRuleClass">
-									<String></String>
-								</field>
-								<field name="attributeLocalName">
-									<String>*</String>
-								</field>
-								<field name="attributeNamespace">
-									<String>*</String>
-								</field>
-								<field name="attributeValue">
-									<String>*</String>
-								</field>
-							</documentTypeRule>
-							<documentTypeRule>
-								<field name="namespace">
-									<String>*</String>
-								</field>
-								<field name="rootElem">
-									<String>*</String>
-								</field>
-								<field name="fileName">
-									<String>*</String>
-								</field>
-								<field name="publicID">
-									<String>*-//OASIS//DTD DITA General Task*</String>
-								</field>
-								<field name="javaRuleClass">
-									<String></String>
-								</field>
-								<field name="attributeLocalName">
-									<String>*</String>
-								</field>
-								<field name="attributeNamespace">
-									<String>*</String>
-								</field>
-								<field name="attributeValue">
-									<String>*</String>
-								</field>
-							</documentTypeRule>
-							<documentTypeRule>
-								<field name="namespace">
-									<String></String>
-								</field>
-								<field name="rootElem">
-									<String>*</String>
-								</field>
-								<field name="fileName">
-									<String>*</String>
-								</field>
-								<field name="publicID">
-									<String>*-//OASIS//DTD DITA Topic*</String>
-								</field>
-								<field name="javaRuleClass">
-									<String></String>
-								</field>
-								<field name="attributeLocalName">
-									<String>*</String>
-								</field>
-								<field name="attributeNamespace">
-									<String>*</String>
-								</field>
-								<field name="attributeValue">
-									<String>*</String>
-								</field>
-							</documentTypeRule>
-							<documentTypeRule>
-								<field name="namespace">
-									<String></String>
-								</field>
-								<field name="rootElem">
-									<String>*</String>
-								</field>
-								<field name="fileName">
-									<String>*</String>
-								</field>
-								<field name="publicID">
-									<String>*-//OASIS//DTD DITA Glossary*</String>
-								</field>
-								<field name="javaRuleClass">
-									<String></String>
-								</field>
-								<field name="attributeLocalName">
-									<String>*</String>
-								</field>
-								<field name="attributeNamespace">
-									<String>*</String>
-								</field>
-								<field name="attributeValue">
-									<String>*</String>
-								</field>
-							</documentTypeRule>
-							<documentTypeRule>
-								<field name="namespace">
-									<String>*</String>
-								</field>
-								<field name="rootElem">
-									<String>*</String>
-								</field>
-								<field name="fileName">
-									<String>*</String>
-								</field>
-								<field name="publicID">
-									<String>*-//OASIS//DTD DITA Learning Overview*</String>
-								</field>
-								<field name="javaRuleClass">
-									<String></String>
-								</field>
-								<field name="attributeLocalName">
-									<String>*</String>
-								</field>
-								<field name="attributeNamespace">
-									<String>*</String>
-								</field>
-								<field name="attributeValue">
-									<String>*</String>
-								</field>
-							</documentTypeRule>
-							<documentTypeRule>
-								<field name="namespace">
-									<String>*</String>
-								</field>
-								<field name="rootElem">
-									<String>*</String>
-								</field>
-								<field name="fileName">
-									<String>*</String>
-								</field>
-								<field name="publicID">
-									<String>*-//OASIS//DTD DITA Learning Content*</String>
-								</field>
-								<field name="javaRuleClass">
-									<String></String>
-								</field>
-								<field name="attributeLocalName">
-									<String>*</String>
-								</field>
-								<field name="attributeNamespace">
-									<String>*</String>
-								</field>
-								<field name="attributeValue">
-									<String>*</String>
-								</field>
-							</documentTypeRule>
-							<documentTypeRule>
-								<field name="namespace">
-									<String>*</String>
-								</field>
-								<field name="rootElem">
-									<String>*</String>
-								</field>
-								<field name="fileName">
-									<String>*</String>
-								</field>
-								<field name="publicID">
-									<String>*-//OASIS//DTD DITA Learning Plan*</String>
-								</field>
-								<field name="javaRuleClass">
-									<String></String>
-								</field>
-								<field name="attributeLocalName">
-									<String>*</String>
-								</field>
-								<field name="attributeNamespace">
-									<String>*</String>
-								</field>
-								<field name="attributeValue">
-									<String>*</String>
-								</field>
-							</documentTypeRule>
-							<documentTypeRule>
-								<field name="namespace">
-									<String>*</String>
-								</field>
-								<field name="rootElem">
-									<String>*</String>
-								</field>
-								<field name="fileName">
-									<String>*</String>
-								</field>
-								<field name="publicID">
-									<String>*-//OASIS//DTD DITA Learning Summary*</String>
-								</field>
-								<field name="javaRuleClass">
-									<String></String>
-								</field>
-								<field name="attributeLocalName">
-									<String>*</String>
-								</field>
-								<field name="attributeNamespace">
-									<String>*</String>
-								</field>
-								<field name="attributeValue">
-									<String>*</String>
-								</field>
-							</documentTypeRule>
-							<documentTypeRule>
-								<field name="namespace">
-									<String>*</String>
-								</field>
-								<field name="rootElem">
-									<String>*</String>
-								</field>
-								<field name="fileName">
-									<String>*</String>
-								</field>
-								<field name="publicID">
-									<String>*-//OASIS//DTD DITA Learning Assessment*</String>
-								</field>
-								<field name="javaRuleClass">
-									<String></String>
-								</field>
-								<field name="attributeLocalName">
-									<String>*</String>
-								</field>
-								<field name="attributeNamespace">
-									<String>*</String>
-								</field>
-								<field name="attributeValue">
-									<String>*</String>
-								</field>
-							</documentTypeRule>
 							<documentTypeRule>
 								<field name="namespace">
 									<String>*</String>
@@ -5768,16 +6392,13 @@ ancestor-or-self::node()[self::*[contains(@class," topic/simpletable ") or conta
 												<null/>
 											</field>
 											<field name="value">
-												<String>${frameworkDir}/DITA-OT</String>
+												<String>${configured.ditaot.dir}</String>
 											</field>
 											<field name="defaultValue">
 												<null/>
 											</field>
 											<field name="type">
 												<Integer>3</Integer>
-											</field>
-											<field name="isPredefined">
-												<Boolean>true</Boolean>
 											</field>
 											<field name="possibleValues">
 												<null/>
@@ -5798,9 +6419,6 @@ ancestor-or-self::node()[self::*[contains(@class," topic/simpletable ") or conta
 											</field>
 											<field name="type">
 												<Integer>4</Integer>
-											</field>
-											<field name="isPredefined">
-												<Boolean>true</Boolean>
 											</field>
 											<field name="possibleValues">
 												<String-array>
@@ -5830,7 +6448,7 @@ ancestor-or-self::node()[self::*[contains(@class," topic/simpletable ") or conta
 									<null/>
 								</field>
 								<field name="showConsoleAlways">
-									<Boolean>false</Boolean>
+									<Boolean>true</Boolean>
 								</field>
 								<field name="advancedOptionsMap">
 									<null/>
@@ -5983,16 +6601,13 @@ ancestor-or-self::node()[self::*[contains(@class," topic/simpletable ") or conta
 												<null/>
 											</field>
 											<field name="value">
-												<String>${frameworkDir}/DITA-OT</String>
+												<String>${configured.ditaot.dir}</String>
 											</field>
 											<field name="defaultValue">
 												<null/>
 											</field>
 											<field name="type">
 												<Integer>3</Integer>
-											</field>
-											<field name="isPredefined">
-												<Boolean>true</Boolean>
 											</field>
 											<field name="possibleValues">
 												<null/>
@@ -6019,7 +6634,7 @@ ancestor-or-self::node()[self::*[contains(@class," topic/simpletable ") or conta
 									<null/>
 								</field>
 								<field name="showConsoleAlways">
-									<Boolean>false</Boolean>
+									<Boolean>true</Boolean>
 								</field>
 								<field name="advancedOptionsMap">
 									<null/>
